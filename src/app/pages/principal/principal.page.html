@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="margin-left: 80px;">Bienvenido: {{username}}</ion-title>
+    <ion-button (click)="cerrarSesion()" color="danger" size="small" slot="end">Log out</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <p style="margin-left: 20px;">
+    Puedes cambiar tu contraseña o ver tus asistencias haciendo click en los siguientes
+    botones
+  </p>
+  <div style="margin-left: 20px;">
+    <div>
+      <ion-button (click)="irChange()" color="primary" size="small" slot="end" >Cambiar Contraseña</ion-button>
+    </div>
+    <div>
+      <ion-button (click)="irAssistence()" color="primary" size="small" slot="end">Ver Asistencias</ion-button>
+    </div>
+  </div>
+
+
+  <br><br>
+  <p style="margin-left: 20px;">Escanea el QR para quedar presente!</p>
+
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button (click)="scan()" [disabled]="!isSupported">
+      <ion-icon name="scan"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+
+</ion-content>

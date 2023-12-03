@@ -1,0 +1,72 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="margin-right: 80px;">Cambiar Contraseña</ion-title>
+    <ion-button 
+      size="small" 
+      (click)="irPrincipal()"
+      class="volver-button"
+      slot="start"
+      >
+      volver
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="div-login">
+    <br>
+    <p>Para cambiar su contraseña ingrese su nombre de usuario, contraseña actual y nueva contraseña</p>
+    <br>
+
+    <ion-item class="inputs">
+      <ion-input         
+        type="text"
+        fill="solid"
+        label="Nombre de Usuario"
+        labelPlacement="floating"
+        helperText="Ingrese su nombre de usuario"
+        [(ngModel)] = "input_user"
+        style="--background: black;"
+        >
+      </ion-input>
+    </ion-item>
+
+    <br>
+
+    <ion-item class="inputs">
+      <ion-input         
+        type="password"
+        fill="solid"
+        label="Contraseña actual"
+        labelPlacement="floating"
+        helperText="Ingrese su actual contrasela"
+        [(ngModel)] = "input_pass"
+        style="--background: black;"
+        >
+      </ion-input>
+    </ion-item>
+
+    <br>
+
+    <ion-item class="inputs">
+      <ion-input
+        type="password"
+        fill="solid"
+        label="Nueva Contraseña"
+        labelPlacement="floating"
+        helperText="Ingrese nueva contraseña"
+        [(ngModel)] = "new_credencial_pass"
+        style="--background: black;"
+        >
+      </ion-input>
+    </ion-item>
+
+    <br>
+
+    <ion-button (click)="cambiarContrasena()" color="warning" expand="block">Confirmar</ion-button>
+
+
+  </div>
+
+
+</ion-content>

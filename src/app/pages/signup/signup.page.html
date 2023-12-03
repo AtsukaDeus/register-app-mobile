@@ -1,0 +1,94 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    
+    <ion-title style="margin-right: 80px;">Registrarse</ion-title>
+    <ion-button 
+        size="small" 
+        (click)="irLogin()"
+        class="volver-button"
+        slot="start"
+        >
+        volver
+    </ion-button>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div class="div-login">
+    <br >
+    <p style="margin-left:10px;">Bienvenido al registro de usuario!, rellene los siguientes campos para crearse una cuenta.
+    </p>
+    <br>
+
+    <ion-item class="inputs">
+      <ion-input
+        type="text"
+        fill="solid"
+        label="Nombre de Usuario"
+        labelPlacement="floating"
+        helperText="Ingrese un nombre de usuario"
+        [(ngModel)] = "mdl_username"
+        style="--background: black;"
+      ></ion-input>
+    </ion-item>
+    <br>
+    <ion-item class="inputs">
+      <ion-input
+        type="text"
+        fill="solid"
+        label="Email"
+        labelPlacement="floating"
+        helperText="Ingrese una contraseña"
+        [(ngModel)] = "mdl_email"
+        style="--background: black;"
+      ></ion-input>
+    </ion-item>
+    <br>
+    <ion-item class="inputs">
+      <ion-input
+        type="password"
+        fill="solid"
+        label="Contraseña"
+        labelPlacement="floating"
+        helperText="Ingrese una contraseña"
+        [(ngModel)] = "mdl_password"
+        style="--background: black;"
+      ></ion-input>
+    </ion-item>
+    <br>
+    <ion-item class="inputs">
+      <ion-input
+        type="text"
+        fill="solid"
+        label="Nombre"
+        labelPlacement="floating"
+        helperText="Ingrese una contraseña"
+        [(ngModel)] = "mdl_name"
+        style="--background: black;"
+      ></ion-input>
+    </ion-item>
+    <br>
+    <ion-item class="inputs">
+      <ion-input
+        type="text"
+        fill="solid"
+        label="Apellido"
+        labelPlacement="floating"
+        helperText="Ingrese una contraseña"
+        [(ngModel)] = "mdl_lastname"
+        style="--background: black;"
+      ></ion-input>
+    </ion-item>
+    <br>
+    <ion-button (click)="createUser()" color="warning" expand="block">Confirmar</ion-button>
+    <br>
+    <br>
+    <br>
+
+  </div>
+
+
+
+</ion-content>

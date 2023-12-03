@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Iniciar Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div class="div-login">
+    <br >
+    <p>Bienvenido! Ingrese sus credenciales para registrar su asistencia.</p>
+    <br>
+
+    <ion-item class="inputs">
+      <ion-input
+        type="text"
+        fill="solid"
+        label="Nombre de Usuario"
+        labelPlacement="floating"
+        helperText="Ingrese su nombre de usuario"
+        [(ngModel)] = "mdl_username"
+        style="--background: black;"
+      ></ion-input>
+    </ion-item>
+
+    <br>
+
+    <ion-item class="inputs">
+      <ion-input
+        type="password"
+        fill="solid"
+        label="Contraseña"
+        labelPlacement="floating"
+        helperText="Ingrese su contraseña"
+        [(ngModel)] = "mdl_password"
+        style="--background: black;"
+      ></ion-input>
+    </ion-item>
+    <br>
+    <p>No tienes cuenta? pincha <a (click)="irSignup()">Aquí</a></p>
+    
+    <br>
+
+    <ion-button (click)="login()" id="login-alert" color="warning" expand="block">Ingresar</ion-button>
+
+  </div>
+
+
+
+
+</ion-content>

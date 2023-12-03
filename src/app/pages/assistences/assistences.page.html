@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    
+    <ion-title style="margin-right: 80px;">Asistencias</ion-title>
+    <ion-button 
+        size="small" 
+        (click)="irPrincipal()"
+        class="volver-button"
+        slot="start"
+        >
+        volver
+    </ion-button>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <ion-item *ngFor="let assistence of assistences" style="margin-top: 20px;">
+    Asignatura: {{ assistence.CODIGO_ASIGNATURA }} {{ assistence.ASIGNATURA }} <br>
+    Total Clases: {{ assistence.TOTAL_CLASES }} <br>
+    Total Clases Presente: {{ assistence.CLASES_PRESENTE }} <br>
+    Total Clases Ausente: {{ assistence.CLASES_AUSENTE }} <br>
+    Usuario: {{ assistence.USUARIO }} <br> <br>
+  </ion-item>
+  
+
+</ion-content>

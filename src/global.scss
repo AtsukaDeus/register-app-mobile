@@ -1,0 +1,70 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+
+ion-toolbar{
+    --background: #f9f21fec;
+    --color: black;
+}
+
+ion-content{
+    --background: black;
+    --color: white;
+}
+
+ion-item{
+    --background: black;
+    --color: white;
+}
+
+ion-title{
+    text-align: center;
+}
+
+ion-input{
+    --background: black;
+}
+
+.div-login{
+    margin-left: 30px;
+    margin-right: 30px;
+    align-items: center;
+    
+}
+
+.inputs{
+    --background: black;
+    margin-left: -12px;
+}
+
+.volver-button{
+    --color: #ffffff;
+    --background: #000000;
+    --background-hover: #1a1919;
+    --background-focused: #2e2d2d;
+    --background-activated: #2e2d2d;
+}
